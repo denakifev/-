@@ -1,0 +1,14 @@
+#!/bin/bash 
+if [[ "$#" -ne 1 ]] 
+then 
+echo "Invalid amount of arguments"
+else
+let i=0
+list=$(find . -type f -name "*.$1")
+for j in $list
+do 
+let i+=1
+done
+echo $i
+fi 
+

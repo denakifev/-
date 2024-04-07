@@ -1,0 +1,9 @@
+#!/bin/bash 
+let i=0
+files=$(find . -type f -name "*")
+echo $files
+for j in $files
+do 
+let i+=1
+done
+echo $i
